@@ -1,0 +1,36 @@
+
+<!--================================================================================================-->
+<div class="jumbotron"><!--"jumbotron" bootsrap class-->
+    <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"><!--here we use "img"tag for xs screenhowever we could have just put the image on background of parent div as we have done for other screen sizes.so the reason is when we will put image as background that image will not strect or contract and it doesnot matter on large screen.but when it comes to mob we want to our image to strect or contract according to screen size so we use img tag as its pic can be changed according to scree.here img-responsive" bootstrap class that change width and height of pic propotionally to screen size.|"visibl-xs" is bootstrap class that show this tag only in xs.-->
+</div>
+<!--===============----END OF JUMBOTRON-----===================================================================-->
+
+<!-------------------------------------------------------------------------------------------------------------->
+<div id="home-tiles" class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" onclick="$dc.loadMenuCategories();">
+            <div id="menue-tile">
+                <span>Menue</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" onclick="$dc.loadMenuItems('{{randomCategoryShortName}}');">
+            <div id="specials-tile">
+                <span>Specials</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://goo.gl/maps/gE7wCHJLRviK7ZDn9" target="_blank"><!--from google-->
+            <div id="map-tile">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17776.17920683557!2d-76.72384037004679!3d39.36528197443586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2s!4v1599027713733!5m2!1sen!2s" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><!--from google embeded and here we changed width to 100 as it deends on our container and height equals to its parent height(map-tile)-->
+                <span>Map</span>
+            </div>
+        </a>
+    </div>
+    
+</div>
+<!--------------------END OF TILES-------------------------------------------------------------------->
