@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- <style type="text/css">
+    #top, #bottom {
+      width: 200px;
+      height: 200px;
+      background-color: maroon;
+      border: 1px solid red;
+    }
+    </style> -->
+  </head>
+<body>
+<!--X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X -->
+
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+	<header>
+		<nav id="header-nav" class="navbar navbar-default"> <!--Its for the yellow header."navbar navbar-defualt" bootstrap classes-->
+			<div class="container">
+				<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+				<div class="navbar-header"><!--"navbar-header" is bootstrap class for logo-->
+					<!--**********************************************************************-->
+					<a href="index.html" class="pull-left visible-md visible-lg"> <!--pull-left is way of floating to left in bootstrap and ""visible-md/visible-lg" are classes that will show this tag only if screen size is in range of md or lg in bootstrap grid system.here thes md and lg ranges are of older version-->
+					 	<div id="logo-img" alt="Logo image"></div>
+					</a>
+					<!--**********************************************************************-->
+					<div class="navbar-brand"> <!--"navbar-brand" is bootstarp class for brand name-->
+						<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+						<p>
+							<img src="images/star-k-logo.png" alt="Kosher Certification">
+							<span>Kosher Certified</span>
+						</p>
+					</div>
+					<!--**********************************************************************-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"><!--"navbar-toggle" bootstrap class is responsible for positioning menue for mobile(it works on width<768 as mentioned in bootstrap.css.Check more about this class in bootstrap.css)||"collapsed" bootstrap class doesnot exist in bootstrap.its signifying a bootstrap plugin that this button is in a collapsed state.No body has clicked on it and once when its clicked away, this class will go away.||data-toggle and data-target are html5 api attributes that allow javascript plugins/code to get these attributes in easy and standardized way."collapse" can be find in bootstrap.js and it work is to up and down menue button||"aria"=false is just for screen readers and just leave it as it is coz is none of our concern and part of above syntax(part of documentation to put it here so leave it)-->
+   				    	<span class="sr-only">Toggle navigation</span><!--sr-only bootstrao class  is for screen reader to say toggle navigation.this "toggle navigation will never show up on screen"-->
+   				    	<span class="icon-bar"></span>
+   				    	<span class="icon-bar"></span>
+   				    	<span class="icon-bar"></span><!--"icon-bar" bootstrap class is putting those icon(horizontal lines) on our button like(|__|).-->
+
+  					</button>
+  					<!--**********************************************************************-->		
+				</div>
+				<!--$$$$$$$$$$$$$$$$$$------END OF NAVBAR-HEADER-------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+				<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+				<div id="collapsable-nav" class="collapse navbar-collapse"><!--collapasble-nav is id for 'data-toggle' input."collapse navbar-collapse" these are the classes that bootstrap documentation want us to put in colapsable menue-->
+					<ul id="nav-list" class="nav navbar-nav navbar-right"><!--"nav navbar-nav" are bootstrap classes saying that i m going to be a component of navigation bar or navigatuion. and these classes turn unorderd list in 
+					nicely donr menue in navifgation bar."navbar-right" bootstrap class(especially for nav)is like pull-right and float navigation bar to right-->
+
+						<li class="visible-xs">
+							<a href="index.html">
+								<span class="glyphicon glyphicon-home"></span>Home
+							</a>
+							
+						</li>
+
+						<li >
+
+							<a href="menue-categories.html">
+								<span class="glyphicon glyphicon-cutlery"></span><!--"glyphicon" is bootstrap class that bring icon font(vector based image that behave like fonts like size,color etc)."glyphicon-cutlery" is bootstrap class that show fork,spon,knife icon.-->
+								<br class="hidden-xs">Menue<!--"hidden-xs" is bootsrap class that hide element(here'br'tag),if the screen size is xs-->
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-info-sign"></span>
+								<br class="hidden-xs">About
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-certificate"></span>
+								<br class="hidden-xs">Awards
+							</a>
+						</li>
+
+						<li id="phone" class="hidden-xs">
+							<a href="tel:410-602-5008"><!--it will triger calling (pc/mob)-->
+								<span>410-602-5008</span>
+							</a>
+							<div>* We Deliver</div>
+						</li>
+
+					</ul>
+					
+				</div>
+				<!--%%%%%%%%%%%%%%%%%%%%--END OF COLLAPSABLE NAV--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+			</div>
+		</nav>
+	</header>
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---END OF HEADER OF WEBSITE---@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+	<!--============================================================================================================-->
+	<div id="call-btn" class="visible-xs"><!--adding phone no and "we deliver" for xs screen-->
+    	<a class="btn" href="tel:410-602-5008">
+    		<span class="glyphicon glyphicon-earphone"></span>410-602-5008
+   		</a>
+    </div>
+
+    <div id="xs-deliver" class="text-center visible-xs">* We Deliver
+    </div>
+    <!--=========END OF "CALL BUTTON" AND "WE DELIVER" FOR XS SCREENS ==================================================-->
+
+
+<!--X X X X X X X X X X X XX X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X -->
+
+	<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+	<div id="main-content" class="container">
+		<!--================================================================================================-->
+		<!-- <h2 id="menue-category-title" class="text-center">Lunch Menu</h2>
+		<div class="text-center" id="menue-category-des">Sunday-Friday 11:15am-3:00pm. Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot & Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll.
+		</div> -->
+		<!--==================END OF HEADING========================================================================-->
+
+
+		<!--================================================================================================-->
+		<!-- <section class="row">
+
+			<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D01</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">
+							$10.95 <span>(pint) </span> $14.95 <span>(quart)</span>
+						</div>
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown saucebean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D02</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">
+							$10.95 <span>(pint) </span> $14.95 <span>(quart)</span>
+						</div>
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+			<div class="clearfix visible-md visible-lg"></div><!--"clearfix" is a bootstrap class that clears the all floated content of the elemnt its applied to and also used to clear floated content within a container.its use here so that if the description is too long so it wont messup with our own layout and increase the height of whole row so that the next row is align perfectly. c-->
+
+
+			<!--<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D03</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">$10.95 <span>(pint) </span> $14.95 <span>(quart)</span></div>
+						
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D04</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">
+							$10.95 <span>(pint) </span> $14.95 <span>(quart)</span>
+						</div>
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+			<div class="clearfix visible-md visible-lg"></div>
+
+			<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D05</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">
+							$10.95 <span>(pint) </span> $14.95 <span>(quart)</span>
+						</div>
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+
+			<div class="menue-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="menue-item-photo">
+							<div>D06</div>
+							<img class="img-responsive" width="250" height="150" src="images/menue/B/B-1.jpg">
+						</div>
+						<div class="menue-item-price">
+							$10.95 <span>(pint) </span> $14.95 <span>(quart)</span>
+						</div>
+					</div>
+
+					<div class="menue-item-description col-sm-7">
+						<h3 class="menue-item-title">Hunan Bean Curd</h3>
+						<p class="menue-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+					</div>
+					
+				</div>
+				<hr class="visible-xs">
+			</div>
+			<div class="clearfix visible-md visible-lg"></div>
+
+			
+		</section> -->
+
+		<!--=============--END OF FOOD PROVIDED IN LUNCH(SECTION)================================================-->
+	
+	</div>
+	<!--&&&&&&&&&&&&&&&&&&-----END OF MAIN CONTENT--------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<!--X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X -->
+
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+	<footer class="panel-footer"><!--panel-footer is bootstrap class that add some background and padding and things like that-->
+		
+		<div class="container">
+			<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+			<div class="row">
+				
+				<section id="hours" class="col-sm-4">
+					<span>Hours:</span><br>
+					Sun-Thurs: 11:15am - 10:00pm<br>
+					Fri: 11:15am - 2:30pm<br>
+					Saturday Closed
+					<hr class="visible-xs">
+				</section>
+
+				<section id="address" class="col-sm-4">
+					<span>Address:</span><br>
+					7105 Reisterstown Road<br>
+					Baltimore, MD 21215
+					<p>*Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+					<hr class="visible-xs"><!--hr tag is horizontal rule that seperate content and we will need it when all divs will stack on each other when xs screen will be prsent-->
+				</section>
+
+				<section id="testimonials" class="col-sm-4">
+					<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+					<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>	
+				</section>
+
+			</div>
+			<!--@@@@@@@@@@@@@@@@@@@@@--END OF ROW (HOURS,ADDRESS,TESTIMONIALS)--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+			<!--======================================================================================================-->
+			<div class="text-center">&copy; Copyright  David Chu's China Bistro 2016<!--"text-center "is bootsrap class for aliging text in center and "&copy"puts copyright sign-->
+			</div>
+			<!--====================-- END OF COPYRIGHT-----=================================================================-->
+
+		</div><!--END OF CONTAINER--->
+		
+	</footer>
+	<!--%%%%%%%%%%%%%%%%%%-------------END OF FOOTER------- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<!--X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X-->
+
+<!-- <div id="top" class="pull-left">Testing top</div>
+<div id="bottom">Testing bottom</div> -->
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
